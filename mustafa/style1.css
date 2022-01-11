@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr , 1fr , 1fr;
+    grid-template-rows: 1fr , 1fr , 2fr , 1fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "aside aside aside"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+    background-color: silver;
+    border:thick solid black;
+                        
+}
+nav{
+    border-radius: 1px;
+    background-color: pink;
+    grid-area: nav;
+}
+aside{
+    border-radius: 1px;
+    background-color: plum;
+    grid-area: aside;
+}
+main{
+    border-radius: 1px;
+    background-color: purple;
+    grid-area: main;
+}
+footer{
+    border-radius: 1px;
+    background-color: salmon;
+    grid-area: footer;
+}
